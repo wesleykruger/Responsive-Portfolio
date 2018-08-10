@@ -1,0 +1,360 @@
+html, body {
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: scroll;
+}
+
+body{
+    background-image: url("images/background.png");
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+hr{
+    margin: auto 15px auto 15px;
+}
+
+.titleBar{
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: #fff;
+    border-bottom-style: solid;
+    border-bottom-color: #cccccc;
+    border-width: 2px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    max-width: 1095px;
+}
+
+.container .topName{
+    background-color: #4aaaab;
+    text-align: center;
+    /* font-size: 40px; */
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    /* margin: 12px 12px 12px 125px; */
+    line-height: 70px;
+    align-self: flex-start;
+    align-items: flex-start;
+    width: 30%;
+    border-color: #dddddd;
+    border-width: 1px;
+    font-weight: bold;
+}
+
+.container .topName a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.container ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+.liButton{
+    border-right: 1px;
+    border-right-style: solid;
+    border-right-color: #eee;
+    padding: 0px 15px;
+    justify-content: flex-end;
+    margin: auto;
+    flex: 0 1 auto;
+    align-self: flex-end;
+}
+
+.lastLiButton{
+    margin: auto;
+    align-self: flex-end;
+    flex: 0 1 auto;
+    justify-content: flex-end;
+    padding: 0px 15px;
+}
+
+li a{
+    text-decoration: none;
+    color: darkgrey;
+    cursor: pointer;
+}
+
+li a:hover{
+    color: purple;
+}
+
+.content{
+    max-width: 960px;
+    /* margin: 0 125px auto 125px; */
+    display: inline-flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+}
+
+.about{
+    border-style: solid;
+    border-color: #dddddd;
+    border-width: 1px;
+    border-spacing: 15px;
+    background-color: #fff;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.content h1{
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    color: #4aaaab;
+    font-size:40px;
+    align-self: flex-end;
+    margin: 20px auto 5px 15px;
+    font-weight: bold;
+}
+
+.about p{
+    margin-bottom: auto;
+    margin-left: 15px;
+} 
+
+.pClass{
+    align-items: baseline;
+    margin: 15px 15px 15px 0;
+}
+
+.content p{
+    color: #777777;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    display:flex;
+}
+
+.about img{
+    float: left;
+    margin-left: 15px;
+}
+
+.pages {
+    width: 220px;
+    background-color: #fff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cccccc;
+}
+
+.pages a{
+    margin: 7px 0 0 15px;
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
+
+.contact, .portfolio{
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: #dddddd;
+    border-width: 1px;
+    border-spacing: 15px;
+    background-color: #fff;
+    margin-bottom: 15px;
+    max-width: 960px;
+    width: 100%;
+}
+
+.contact strong{
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.contact form{
+    margin-top: 15px;
+}
+
+input, textarea {
+    width: 95%;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; 
+    color: #777777; 
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 5px;
+    border: 1px solid;
+    border-color: #dddddd;
+    margin-left: 15px;
+}
+
+.contact p{
+    margin-bottom: 2px;
+    padding-left: 15px;
+}
+
+.messageArea{
+    height: 150px;
+}
+
+.contact button {
+    margin: 15px;
+    color: #fff;
+    background-color: #4aaaab;
+    border: none;
+    font-size: 18px;
+    width: 100px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.contact button:hover{
+    background-color: purple;
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
+
+.projects{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.portfolio figure{
+    position: relative;
+    flex-basis: 50%;
+}
+
+.portfolio figure img{
+    margin: 15px 15px 15px 15px;
+    z-index: 0;
+}
+
+.portfolio figcaption{
+    color: white;
+    background-color: #4aaaab;
+    display: inline;
+    position: absolute;
+    top: 65%;
+    left:15px; 
+    z-index:5;
+    font-size:20px;
+    text-align: center;
+    padding: 15px 100px;
+}
+
+figcaption.hangman{
+    padding: 15px 96.8px;
+}
+
+figcaption.rpg{
+    padding: 15px 88.6px;
+}
+
+figcaption.trivia{
+    padding: 15px 86px;
+}
+
+figcaption.rutgers{
+    padding: 15px 51.7px;
+}
+
+figcaption.rps{
+    padding: 15px 47.5px;
+}
+
+footer {
+    clear: both;
+    position: relative;
+    flex-shrink: 0;
+    left: 0px;
+    bottom: 0px;
+    text-align: center;
+    padding-top: 25px;
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    background-color: #666666;
+    font-size: 16px;
+    border-top-style: solid;
+    border-top-color: #4aaaab;
+    border-top-width: 6px;
+}
+
+/*---------------------------------------------------------*/
+
+/* Smartphones (landscape) ----------- */
+@media screen 
+and (min-width : 320px) {
+    .body {
+        margin: 0;
+    }
+    .about {
+        width: 100%;
+    }
+    .content {
+        margin: 0;
+    }
+    .topName {
+        margin: 0;
+        font-size: 30px;
+    }
+    .profile {
+        height: 120px;
+        width: 110px;
+    }
+}
+
+@media screen
+and (min-width: 480px) {
+    .body {
+        margin: 0;
+    }
+    .about {
+        width: 100%;
+    }
+    .content {
+        margin: 0;
+    }
+    .topName {
+        margin: 0;
+        font-size: 30px;
+    }
+    .profile {
+        height: 140px;
+        width: 130px;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 720px) {
+    .topName{
+    margin: 12px 12px 12px 125px;
+    font-size: 40px;
+    }
+    .content{
+        margin: 0 125px auto 125px;
+    }
+    .profile {
+        height: 200px;
+        width: 190px;
+    }
+/* Styles */
+}
+
+/* Large screens ----------- */
+/* @media only screen  */
+/* and (min-width : 1824px) { */
+/* Styles */
+/* } */
