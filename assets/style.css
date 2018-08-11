@@ -294,8 +294,9 @@ footer {
 /*---------------------------------------------------------*/
 
 /* Smartphones (landscape) ----------- */
-@media screen 
-and (min-width : 320px) {
+
+@media screen
+and (max-width: 480px) {
     .body {
         margin: 0;
     }
@@ -306,12 +307,22 @@ and (min-width : 320px) {
         margin: 0;
     }
     .topName {
-        margin: 0;
+        margin-left: 5em;
         font-size: 30px;
     }
     .profile {
-        height: 120px;
-        width: 110px;
+        height: 140px;
+        width: 130px;
+    }
+    .container {
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .container ul{
+        align-items: center;
+        margin: auto;
     }
 }
 
@@ -327,18 +338,63 @@ and (min-width: 480px) {
         margin: 0;
     }
     .topName {
-        margin: 0;
+        margin-left: 5em;
         font-size: 30px;
     }
     .profile {
         height: 140px;
         width: 130px;
     }
+    .container {
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .container ul{
+        align-items: center;
+        margin: auto;
+    }
+}
+
+@media screen
+and (max-width: 640px) {
+    .body {
+        margin: 10px;
+    }
+    .about {
+        width: 100%;
+    }
+    .content {
+        margin: 10px;
+    }
+    .topName {
+        margin: auto;
+        font-size: 30px;
+    }
+    .profile {
+        height: 160px;
+        width: 150px;
+    }
+    .container {
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    .container ul {
+        align-items: center;
+    }
+    .titleBar {
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 /* Desktops and laptops ----------- */
 @media only screen 
-and (min-width : 720px) {
+and (min-width : 641px) {
     .topName{
     margin: 12px 12px 12px 125px;
     font-size: 40px;
@@ -349,6 +405,9 @@ and (min-width : 720px) {
     .profile {
         height: 200px;
         width: 190px;
+    }
+    .container {
+        flex-direction: row;
     }
 /* Styles */
 }
